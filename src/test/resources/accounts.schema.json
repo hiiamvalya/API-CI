@@ -4,9 +4,9 @@
   "default": [],
   "items": {
     "type": "object",
-    "additionalProperties": false,
+    'additionalProperties': false
     "required": [
-      "id",
+      'id',
       "name",
       "number",
       "balance",
@@ -27,9 +27,10 @@
       "balance": {
         "type": "integer",
         "default": 0
+        }
       },
       "currency": {
-        "type": "string"
+        "enum": ["USD", "RUB"]
       }
     }
   }
